@@ -1,25 +1,70 @@
-<!DOCTYPE html><html><p>Add Enmity (Discord) source to: <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/enmity.json">AltStore</a> or <button onClick="copyEnmity()">copy link to Scarlet repo</button></p>
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head><body><p>Add Enmity (Discord) source to <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/enmity.json">AltStore</a> or <div class="tooltip"><span class="tooltiptext" id="enmityTooltip">Click to copy</span><button onClick="copyEnmity()">copy link to Scarlet repo</button></div></p>
 <br>
-<p>Add BHTwitter (X) source to: <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/bhtwitter.json">AltStore</a> or <button onClick="copyX()">copy link to Scarlet repo</button></p>
+<p>Add BHTwitter (X) source to <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/bhtwitter.json">AltStore</a> or <div class="tooltip"><span class="tooltiptext" id="xTooltip">Click to copy</span><button onClick="copyX()">copy link to Scarlet repo</button></div></p>
 <br>
-<p>Add Twitch+ source to: <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/twitch.json">AltStore</a> or <button onClick="copyTwitch()">copy link to Scarlet repo</button></p>
+<p>Add Twitch+ source to <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/twitch.json">AltStore</a> or <div class="tooltip"><span class="tooltiptext" id="twitchTooltip">Click to copy</span><button onClick="copyTwitch()">copy link to Scarlet repo</button></div></p>
 <br>
-<p>Add Project Era (Fortnite) source to: <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/erafn.json">AltStore</a> or <button onClick="copyEra()">copy link to Scarlet repo</button></p></html>
+<p>Add Project Era (Fortnite) source to <a href="altstore://source?URL=https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/erafn.json">AltStore</a> or <div class="tooltip"><span class="tooltiptext" id="eraTooltip">Click to copy</span><button onClick="copyEra()">copy link to Scarlet repo</button></div></p></html>
 <script>
 function copyEra() {
   navigator.clipboard.writeText("https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/erafn.json");
-  alert("Copied source URL");
+  var tooltip = document.getElementById("eraTooltip");
+  tooltip.innerHTML = "Copied ✓";
 }
 function copyTwitch() {
   navigator.clipboard.writeText("https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/twitch.json");
-  alert("Copied source URL");
+  var tooltip = document.getElementById("twitchTooltip");
+  tooltip.innerHTML = "Copied ✓";
 }
 function copyX() {
   navigator.clipboard.writeText("https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/bhtwitter.json");
-  alert("Copied source URL");
+  var tooltip = document.getElementById("xTooltip");
+  tooltip.innerHTML = "Copied ✓";
 }
 function copyEnmity() {
   navigator.clipboard.writeText("https://raw.githubusercontent.com/ftc-payton/personal-altsources/main/enmity.json");
-  alert("Copied source URL");
+  var tooltip = document.getElementById("enmityTooltip");
+  tooltip.innerHTML = "Copied ✓";
 }
-</script>
+</script></body></html>
