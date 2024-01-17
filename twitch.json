@@ -14,17 +14,17 @@
       "tintColor": "8F00FF",
       "versions": [
         {
-          "version": "17.6",
-          "date": "2024-01-02",
-          "localizedDescription": "Updated Twitch to 7.6",
-          "downloadURL": "https://starfilesdl.com/rjnSEfr84GdM",
+          "version": "17.8",
+          "date": "2024-01-17",
+          "localizedDescription": "Updated Twitch to 17.8",
+          "downloadURL": "https://download.starfiles.co/3b04zduRAViB",
           "size": 100000000
         }
       ],
-      "version": "17.6",
-      "versionDate": "2024-01-02",
-      "versionDescription": "Updated Twitch to 7.6",
-      "downloadURL": "https://starfilesdl.com/rjnSEfr84GdM",
+      "version": "17.8",
+      "versionDate": "2024-01-17",
+      "versionDescription": "Updated Twitch to 17.8",
+      "downloadURL": "https://download.starfiles.co/3b04zduRAViB",
       "size": 100000000
     }
   ]
